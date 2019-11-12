@@ -1,0 +1,177 @@
+
+/* -------------------- RESET -------------------- */
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/* -------------------- COMMONS -------------------- */
+body {
+  background: #202020;
+  color: white;
+  font-family: arial;
+}
+
+.block_main > section:not(:first-child) {
+  padding: 3rem 2rem;
+}
+.block_main > section:nth-child(even) {
+  background: #303030;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.subtitle {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+/* -------------------- HEADER -------------------- */
+.block_header {
+  position: fixed;
+  width: 100%;
+  background: #202020;
+}
+.block_header .logo {
+  display: none;
+}
+.block_header .main_menu {
+  display: none;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  box-shadow: 0px 1px 5px #101010;
+  padding: .8rem;
+}
+.block_header .main_menu a {
+  display: block;
+  padding: .5rem;
+}
+.block_header .hamburger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background: #404040;
+}
+.block_header .main_menu.open {
+  display: block;
+}
+
+
+/* -------------------- MAIN -------------------- */
+.block_main {
+  overflow: hidden;
+}
+
+/* -------------------- PRESENTATION -------------------- */
+.block_presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding-top: 10%;
+}
+.block_presentation .inner {
+  padding: 0 5%;
+}
+.block_presentation .title {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-family: 'Oswald', serif;
+  /* font-weight: bold; */
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin: 2rem auto;
+  padding: 0 .2rem;
+}
+.block_presentation .presentation {
+  font-size: 1.5rem;
+  color: lightgrey;
+}
+.block_presentation .scroll_down {
+  margin-top: 10%;
+}
+.block_presentation .scroll_down a {
+  display: inline-block;
+  padding: 2%;
+}
+.block_presentation .scroll_down .fa {
+  color: white;
+  font-size: 2rem;
+}
+
+
+
+/* -------------------- ABOUT ME -------------------- */
+.block_aboutme .inner {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+.block_aboutme .subtitle {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.block_aboutme .left {
+  background: white;
+  width: 1px;
+  height: auto;
+}
+.block_aboutme .text {
+  width: 90%;
+  font-size: 1.2rem;
+}
+
+/* -------------------- CONTACT -------------------- */
+.block_contact .block_form input, textarea {
+  width: 100%;
+  background: #404040;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Cardo', sans-serif;
+  font-size: 1.3rem;
+  margin: .5rem 0 2rem;
+  padding: .5rem .2rem;
+}
+.block_contact .block_form .send {
+  display: block;
+  width: auto;
+  background: #404040;
+  border: none;
+  border-radius: 3px;
+  margin: 1rem auto;
+  padding: .8rem 1.5rem;
+}
+
+/* -------------------- FOOTER -------------------- */
+
+
+@media (min-width: 1366px)
+{
+
+}

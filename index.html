@@ -2,9 +2,119 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>hello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyril Fauveau</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
   </head>
   <body>
+
+    <header class="block_header">
+      <div class="inner">
+
+        <span class="logo">Cyril</span>
+
+        <nav id="main_menu" class="main_menu">
+          <ul>
+            <li><a href="">A propos de moi</a></li>
+            <li><a href="">Parcours</a></li>
+            <li><a href="">Compétences</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="hamburger" class="hamburger"></div>
+
+      </div>
+    </header>
+
+    <main class="block_main">
+
+      <section class="block_presentation">
+        <div class="inner">
+
+          <h1 class="title" data-aos="fade-up">Cyril Fauveau</h1>
+
+          <p class="presentation" data-aos="fade-up" data-aos-delay="300">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+
+          <div class="scroll_down">
+            <a href="#">
+              <i class="fa fa-angle-double-down"></i>
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="block_aboutme">
+        <div class="inner">
+          <h2 class="subtitle" data-aos="fade-up">A PROPOS DE MOI</h2>
+          <div class="left"></div>
+          <p class="text" data-aos="fade-left" data-aos-delay="200">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </section>
+
+      <section class="block_cursus">
+        <div class="inner">
+          <h2 class="subtitle">MON PARCOURS</h2>
+        </div>
+      </section>
+
+      <section class="block_projects">
+        <div class="inner">
+          <h2 class="subtitle">PROJETS</h2>
+          <figure>
+
+          </figure>
+          <p></p>
+        </div>
+      </section>
+
+      <section class="block_skills">
+        <div class="inner">
+          <h2 class="subtitle">COMPETENCES</h2>
+        </div>
+      </section>
+
+      <section class="block_contact">
+        <div class="inner">
+          <h2 class="subtitle">CONTACT</h2>
+          <form class="block_form" action="">
+            <label for="">Votre nom</label><input type="text" name="name">
+            <label for="">Votre e-mail</label><input type="email" name="mail">
+            <label for="">Votre message</label><textarea rows="5" name="message"></textarea>
+            <input class="send" type="submit" value="Envoyer">
+          </form>
+          <div class="informations">
+
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="block_footer">
+      <div class="inner">
+
+      </div>
+    </footer>
+
+    <script type="text/javascript">
+
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById('hamburger').addEventListener("click", function() {
+          document.getElementById('main_menu').classList.toggle("open");
+        });
+      });
+
+    </script>
+
+    <script type="text/javascript" src="aos-master/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
   </body>
 </html>
