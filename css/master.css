@@ -22,6 +22,10 @@ a {
   text-decoration: none;
 }
 
+strong {
+  font-weight: normal;
+}
+
 /* -------------------- COMMONS -------------------- */
 body {
   background: #202020;
@@ -92,7 +96,6 @@ body {
   justify-content: center;
   height: 100vh;
   text-align: center;
-  padding-top: 10%;
 }
 .block_presentation .inner {
   padding: 0 5%;
