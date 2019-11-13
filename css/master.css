@@ -165,15 +165,14 @@ body {
 .block_projects {
   padding: 3rem 0 !important;
 }
-.block_projects .image {
+.block_projects .carousel .image {
+  overflow: hidden;
   position: relative;
+  max-height: 500px;
   background: white;
   border: 2px solid white;
 }
-.block_projects .image .legend {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.block_projects .carousel .image .legend {
   position: absolute;
   top: 0;
   width: 100%;
@@ -185,7 +184,27 @@ body {
   background: rgba(0, 0, 0, .6);
   margin: auto;
 }
-
+.block_projects .carousel .image .legend > a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.block_projects .carousel_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 3rem auto 0;
+}
+.block_projects .carousel_buttons .button {
+  width: 50px;
+  height: 3px;
+  background: grey;
+}
+.block_projects .carousel_buttons .button.active {
+  width: 70px;
+  background: white;
+}
 
 /* -------------------- SKILLS -------------------- */
 
