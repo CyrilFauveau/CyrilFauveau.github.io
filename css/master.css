@@ -36,7 +36,7 @@ strong {
 
 /* -------------------- COMMONS -------------------- */
 body {
-  background: #202020;
+  background: #1d1d1d;
   color: white;
   font-family: arial;
 }
@@ -45,7 +45,7 @@ body {
   padding: 3rem 2rem;
 }
 .block_main > section:nth-child(even) {
-  background: #303030;
+  background: rgba(255, 255, 255, .05);
 }
 
 ::-webkit-scrollbar {
@@ -64,7 +64,7 @@ body {
   display: none;
   position: fixed;
   width: 100%;
-  background: #202020;
+  background: #1d1d1d;
 }
 .block_header .logo {
   display: none;
@@ -163,14 +163,14 @@ body {
 
 /* -------------------- PROJECTS -------------------- */
 .block_projects {
-  padding: 3rem 0 !important;
+  padding: 3rem 1rem !important;
 }
 .block_projects .carousel .image {
   overflow: hidden;
   position: relative;
   max-height: 500px;
   background: white;
-  border: 2px solid white;
+  /* border: 2px solid white; */
 }
 .block_projects .carousel .image .legend {
   position: absolute;
@@ -193,13 +193,14 @@ body {
 .block_projects .carousel_buttons {
   display: flex;
   justify-content: space-between;
-  width: 55%;
+  width: 180px;
   margin: 3rem auto 0;
 }
 .block_projects .carousel_buttons .button {
+  cursor: pointer;
   width: 50px;
   height: 3px;
-  background: grey;
+  background: #606060;
 }
 .block_projects .carousel_buttons .button.active {
   width: 70px;
@@ -213,7 +214,7 @@ body {
 .block_contact .block_form input,
 .block_contact .block_form textarea {
   width: 100%;
-  background: #404040;
+  background: rgba(255, 255, 255, .1);
   color: white;
   border: none;
   border-radius: 3px;
@@ -225,7 +226,7 @@ body {
 .block_contact .block_form .send {
   display: block;
   width: auto;
-  background: #404040;
+  background: rgba(255, 255, 255, .1);
   border: none;
   border-radius: 3px;
   font-family: 'Arial', sans-serif;

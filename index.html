@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="aos-master/dist/aos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   </head>
   <body>
 
@@ -69,7 +70,7 @@
           <div class="carousel">
             <figure class="image">
               <img src="img/futuroid.jpg" alt="futuroid">
-              <figcaption class="legend"><a href="https://futuroid.io/"target="_blank">Futuroid</a></figcaption>
+              <figcaption class="legend"><a href="https://futuroid.io/" target="_blank">Futuroid</a></figcaption>
             </figure>
 
           </div>
@@ -84,16 +85,39 @@
       <section class="block_skills">
         <div class="inner">
           <h2 class="subtitle" data-aos="fade-up" data-aos-anchor-placement="top-bottom">COMPETENCES</h2>
+          <div class="frontend">
+            <h3 class="title-3">Frontend</h3>
+            <ul class="list">
+              <li>HTML/CSS</li>
+              <li>Bootstrap/Sass</li>
+              <li>Javascript</li>
+              <li>Jquery</li>
+            </ul>
+          </div>
+          <div class="backend">
+            <h3 class="title-3">Backend</h3>
+            <ul class="list">
+              <li>PHP/Mysql</li>
+              <li>CodeIgniter</li>
+            </ul>
+          </div>
+          <div class="other">
+            <h3 class="title-3">Autres</h3>
+            <ul class="list">
+              <li>Angular/Ionic</li>
+              <li>Git</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="block_contact">
         <div class="inner">
           <h2 class="subtitle" data-aos="fade-up" data-aos-anchor-placement="top-bottom">CONTACT</h2>
-          <form class="block_form" action="">
-            <label for="">Votre nom</label><input type="text" name="name">
-            <label for="">Votre e-mail</label><input type="email" name="mail">
-            <label for="">Votre message</label><textarea rows="5" name="message"></textarea>
+          <form class="block_form" action="index.html">
+            <label for="name">Votre nom</label><input id="name" type="text" name="name">
+            <label for="mail">Votre e-mail</label><input id="mail" type="email" name="mail">
+            <label for="message">Votre message</label><textarea id="message" rows="5" name="message"></textarea>
             <input class="send" type="submit" value="Envoyer">
           </form>
           <div class="informations">
@@ -109,7 +133,7 @@
       </div>
     </footer>
 
-    <script type="text/javascript">
+    <script>
 
       document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('hamburger').addEventListener("click", function() {
@@ -119,7 +143,7 @@
 
     </script>
 
-    <script type="text/javascript" src="aos-master/dist/aos.js"></script>
+    <script src="aos-master/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
