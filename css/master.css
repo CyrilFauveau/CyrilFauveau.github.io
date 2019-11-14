@@ -446,6 +446,11 @@ body {
     padding: 2rem 2.5rem;
   }
 
+  /* -------------------- PRESENTATION -------------------- */
+  .block_presentation .inner {
+    padding: 0;
+  }
+
   /* -------------------- PROJECTS -------------------- */
   .block_projects .subtitle {
     margin: 2rem 0 5rem;
