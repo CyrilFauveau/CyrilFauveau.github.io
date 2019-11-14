@@ -15,24 +15,24 @@
     <header class="block_header">
       <div class="inner">
 
-        <span class="logo">Cyril</span>
+        <a href="#presentation" class="logo">Cyril</a>
 
-        <nav id="main_menu" class="main_menu">
+        <nav class="main_menu">
           <ul>
-            <li><a href="">A propos de moi</a></li>
-            <li><a href="">Parcours</a></li>
-            <li><a href="">Compétences</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#aboutme">A propos de moi</a></li>
+            <li><a href="#cursus">Parcours</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div id="hamburger" class="hamburger"></div>
 
       </div>
     </header>
 
     <main class="block_main">
 
-      <section class="block_presentation">
+      <section id="presentation" class="block_presentation">
         <div class="inner">
 
           <h1 class="title" data-aos="fade-up"><strong>Cyril Fauveau</strong></h1>
@@ -41,16 +41,10 @@
             Bienvenue sur mon <strong>portfolio</strong> !
           </p>
 
-          <div class="scroll_down">
-            <a href="#">
-              <i class="fa fa-angle-double-down"></i>
-            </a>
-          </div>
-
         </div>
       </section>
 
-      <section class="block_aboutme">
+      <section id="aboutme" class="block_aboutme">
         <div class="inner">
           <h2 class="subtitle" data-aos="fade-up" data-aos-anchor-placement="center-bottom">A PROPOS DE MOI</h2>
           <div class="left"></div>
@@ -58,13 +52,13 @@
         </div>
       </section>
 
-      <section class="block_cursus">
+      <section id="cursus" class="block_cursus">
         <div class="inner">
           <h2 class="subtitle" data-aos="fade-up" data-aos-anchor-placement="center-bottom">MON PARCOURS</h2>
         </div>
       </section>
 
-      <section class="block_projects">
+      <section id="projects" class="block_projects">
         <div class="inner">
           <h2 class="subtitle" data-aos="fade-up" data-aos-anchor-placement="center-bottom">PROJETS</h2>
           <div class="carousel">
@@ -82,7 +76,7 @@
         </div>
       </section>
 
-      <section class="block_skills">
+      <section id="skills" class="block_skills">
         <div class="inner">
           <h2 class="subtitle" data-aos="fade-up" data-aos-anchor-placement="center-bottom">COMPETENCES</h2>
           <div class="frontend">
@@ -183,7 +177,7 @@
         </div>
       </section>
 
-      <section class="block_contact">
+      <section id="contact" class="block_contact">
         <div class="inner">
           <h2 class="subtitle" data-aos="fade-up" data-aos-anchor-placement="center-bottom">CONTACT</h2>
           <form class="block_form" action="index.html">
@@ -204,16 +198,6 @@
 
       </div>
     </footer>
-
-    <script>
-
-      document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById('hamburger').addEventListener("click", function() {
-          document.getElementById('main_menu').classList.toggle("open");
-        });
-      });
-
-    </script>
 
     <script src="aos-master/dist/aos.js"></script>
     <script>

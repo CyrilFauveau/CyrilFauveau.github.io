@@ -35,6 +35,9 @@ strong {
 }
 
 /* -------------------- COMMONS -------------------- */
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #1d1d1d;
   color: white;
@@ -47,9 +50,13 @@ body {
 .block_main > section:nth-child(even) {
   background: rgba(255, 255, 255, .05);
 }
+.block_main > section .inner {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .subtitle {
@@ -62,36 +69,7 @@ body {
 /* -------------------- HEADER -------------------- */
 .block_header {
   display: none;
-  position: fixed;
-  width: 100%;
-  background: #1d1d1d;
 }
-.block_header .logo {
-  display: none;
-}
-.block_header .main_menu {
-  display: none;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  box-shadow: 0px 1px 5px #101010;
-  padding: .8rem;
-}
-.block_header .main_menu a {
-  display: block;
-  padding: .5rem;
-}
-.block_header .hamburger {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 50px;
-  height: 50px;
-  background: #404040;
-}
-.block_header .main_menu.open {
-  display: block;
-}
-
 
 /* -------------------- MAIN -------------------- */
 .block_main {
@@ -107,7 +85,7 @@ body {
   text-align: center;
 }
 .block_presentation .inner {
-  padding: 0 5% 10%;
+  padding: 0 5% 15%;
 }
 .block_presentation .title {
   display: inline-block;
@@ -136,8 +114,6 @@ body {
   font-size: 2rem;
 }
 
-
-
 /* -------------------- ABOUT ME -------------------- */
 .block_aboutme .inner {
   display: flex;
@@ -159,7 +135,9 @@ body {
 }
 
 /* -------------------- CURSUS -------------------- */
+.block_cursus {
 
+}
 
 /* -------------------- PROJECTS -------------------- */
 .block_projects {
@@ -211,11 +189,11 @@ body {
   text-transform: capitalize;
   font-family: 'Oswald', sans-serif;
   font-size: 1.8rem;
-  margin: 3rem 0 1rem;
+  margin: 4rem 0 1rem;
 }
 .block_skills .list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: wrap;
 }
 .block_skills .list .skill {
@@ -230,8 +208,7 @@ body {
   height: 5em;
   background-color: #505050;
   border-radius: 50%;
-  margin: 1rem;
-  /* line-height: 5em; */
+  margin: 1rem 1.5rem;
 }
 .block_skills .progress-circle:after {
   border: none;
@@ -239,7 +216,6 @@ body {
   top: 0.35em;
   left: 0.35em;
   text-align: center;
-  /* display: block; */
   border-radius: 50%;
   width: 4.3em;
   height: 4.3em;
@@ -309,9 +285,10 @@ body {
   border-radius: 3px;
   font-size: 1.3rem;
   margin: .5rem 0 2rem;
-  padding: .5rem .2rem;
+  padding: .5rem;
 }
 .block_contact .block_form .send {
+  cursor: pointer;
   display: block;
   width: auto;
   background: rgba(255, 255, 255, .1);
@@ -327,7 +304,159 @@ body {
 
 /* -------------------- MEDIA QUERIES -------------------- */
 
-@media (min-width: 1024px)
-{
 
+
+@media (min-width: 768px)
+{
+  /* -------------------- COMMONS -------------------- */
+  .subtitle {
+    font-size: 2.5rem;
+  }
+
+  /* -------------------- PRESENTATION -------------------- */
+  .block_presentation .inner {
+    padding: 0 5% 10%;
+  }
+  .block_presentation .title {
+    font-size: 4rem;
+  }
+  .block_presentation .presentation {
+    font-size: 2rem;
+  }
+
+  /* -------------------- ABOUT ME -------------------- */
+  .block_aboutme .inner {
+    max-width: 700px;
+    justify-content: center;
+    margin: auto;
+  }
+  .block_aboutme .text {
+    margin-left: 1rem;
+  }
+
+  /* -------------------- PROJECTS -------------------- */
+  .block_projects .carousel {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  /* -------------------- CONTACT -------------------- */
+  .block_contact .block_form {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+
+
+
+
+@media (min-width: 1336px)
+{
+  /* -------------------- COMMONS -------------------- */
+  .block_main > section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1d1d1d !important;
+    padding: 0 !important;
+  }
+
+  .subtitle {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  /* -------------------- HEADER -------------------- */
+  .block_header {
+    display: block;
+    position: fixed;
+    width: 100%;
+  }
+  .block_header .inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem 2rem;
+  }
+  .block_header .logo {
+    display: block;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+  }
+  .block_header .main_menu {
+    font-size: 1.3rem;
+  }
+  .block_header .main_menu > ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .block_header .main_menu a {
+    display: block;
+    margin: 0 1.5rem;
+  }
+
+  /* -------------------- PRESENTATION -------------------- */
+  .block_presentation .inner {
+    padding: 0 5% 5%;
+  }
+
+  /* -------------------- ABOUT ME -------------------- */
+  .block_aboutme .inner {
+    max-width: none;
+    justify-content: center;
+  }
+  .block_aboutme .subtitle {
+    width: 30%;
+    text-align: right;
+    margin-right: 2rem;
+  }
+  .block_aboutme .text {
+    width: 40%;
+  }
+
+  /* -------------------- POJECTS -------------------- */
+  .block_projects .subtitle {
+    margin-top: 5rem;
+  }
+
+  /* -------------------- SKILLS -------------------- */
+  .block_skills .inner {
+    padding: 5rem 0;
+  }
+  .block_skills .subtitle {
+    margin-top: 5rem;
+  }
+
+  /* -------------------- CONTACT -------------------- */
+  .block_contact .subtitle {
+    margin: 5rem 0;
+  }
+}
+
+
+
+
+
+@media (min-width: 1536px)
+{
+  /* -------------------- HEADER -------------------- */
+  .block_header .inner {
+    padding: 2rem 2.5rem;
+  }
+
+  /* -------------------- PROJECTS -------------------- */
+  .block_projects .subtitle {
+    margin: 2rem 0 5rem;
+  }
+
+  /* -------------------- ABOUT ME -------------------- */
+  .block_aboutme .subtitle {
+    width: 35%;
+    font-size: 3.5rem;
+  }
+  .block_aboutme .text {
+    font-size: 1.5rem;
+  }
 }
