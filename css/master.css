@@ -273,6 +273,15 @@ body {
 .block_skills .progress-circle.p95 .value-bar { transform: rotate(342deg); }
 .block_skills .progress-circle.p100 .value-bar { transform: rotate(360deg); }
 
+/* -------------------- CV -------------------- */
+.block_cv .legend {
+  text-align: center;
+  text-decoration: underline;
+}
+.block_cv .legend a {
+  display: block;
+  padding: .5rem;
+}
 
 /* -------------------- CONTACT -------------------- */
 .block_contact .block_form input,
@@ -340,6 +349,12 @@ body {
     margin: auto;
   }
 
+  /* -------------------- CV -------------------- */
+  .block_cv .image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
   /* -------------------- CONTACT -------------------- */
   .block_contact .block_form {
     max-width: 500px;
@@ -377,7 +392,7 @@ body {
   .block_header .inner {
     display: flex;
     justify-content: space-between;
-    padding: 1.7rem 2rem;
+    padding: 2rem 2.5rem;
   }
   .block_header .logo {
     display: block;
@@ -394,7 +409,7 @@ body {
   }
   .block_header .main_menu a {
     display: block;
-    margin: 0 1.5rem;
+    margin-left: 3rem;
   }
 
   /* -------------------- PRESENTATION -------------------- */
@@ -418,7 +433,7 @@ body {
 
   /* -------------------- POJECTS -------------------- */
   .block_projects .subtitle {
-    margin-top: 5rem;
+    margin: 5rem 0 3rem;
   }
 
   /* -------------------- SKILLS -------------------- */
@@ -427,6 +442,11 @@ body {
   }
   .block_skills .subtitle {
     margin-top: 5rem;
+  }
+
+  /* -------------------- CV -------------------- */
+  .block_cv .subtitle {
+    margin-top: 10rem;
   }
 
   /* -------------------- CONTACT -------------------- */
@@ -443,17 +463,12 @@ body {
 {
   /* -------------------- HEADER -------------------- */
   .block_header .inner {
-    padding: 2rem 2.5rem;
+    padding: 2.5rem 3.5rem;
   }
 
   /* -------------------- PRESENTATION -------------------- */
   .block_presentation .inner {
     padding: 0;
-  }
-
-  /* -------------------- PROJECTS -------------------- */
-  .block_projects .subtitle {
-    margin: 2rem 0 5rem;
   }
 
   /* -------------------- ABOUT ME -------------------- */
@@ -463,5 +478,47 @@ body {
   }
   .block_aboutme .text {
     font-size: 1.5rem;
+  }
+
+  /* -------------------- PROJECTS -------------------- */
+  .block_projects .subtitle {
+    margin: 5rem 0 3rem;
+  }
+  .block_projects .carousel {
+    max-width: 800px;
+  }
+  .block_projects .carousel .image {
+    max-height: 500px;
+  }
+
+  /* -------------------- SKILLS -------------------- */
+  .block_skills .progress-circle {
+    width: 8em;
+    height: 8em;
+  }
+  .block_skills .progress-circle:after {
+    top: 0.35em;
+    left: 0.35em;
+    width: 7.3em;
+    height: 7.3em;
+  }
+  .block_skills .progress-circle > span {
+    line-height: 8em;
+    width: 8em;
+  }
+  .block_skills .left-half-clipper {
+    width: 10em;
+    height: 10em;
+    clip: rect(0, 10em, 10em, 5em);
+  }
+  .block_skills .value-bar {
+    clip: rect(0, 4em, 8em, 0);
+    width: 8em;
+    height: 8em;
+  }
+  .block_skills .progress-circle.over50 .first50-bar {
+     clip: rect(0, 8em, 8em, 4em);
+     width: 8em;
+     height: 8em;
   }
 }
