@@ -493,33 +493,33 @@ body {
 
   /* -------------------- SKILLS -------------------- */
   .block_skills .progress-circle {
-    width: 8em;
-    height: 8em;
+    width: 6.8em;
+    height: 6.8em;
   }
   .block_skills .progress-circle:after {
     top: 0.35em;
     left: 0.35em;
-    width: 7.3em;
-    height: 7.3em;
+    width: 6.1em;
+    height: 6.1em;
     background-color: #1d1d1d;
   }
   .block_skills .progress-circle > span {
-    line-height: 8em;
-    width: 8em;
+    line-height: 6.8em;
+    width: 6.8em;
   }
   .block_skills .left-half-clipper {
-    width: 10em;
-    height: 10em;
-    clip: rect(0, 10em, 10em, 5em);
+    width: 6.8em;
+    height: 6.8em;
+    clip: rect(0, 6.8em, 6.8em, 3.4em);
   }
   .block_skills .value-bar {
-    clip: rect(0, 4em, 8em, 0);
-    width: 8em;
-    height: 8em;
+    clip: rect(0, 3.2em, 8em, 0);
+    width: 6.8em;
+    height: 6.8em;
   }
   .block_skills .progress-circle.over50 .first50-bar {
-     clip: rect(0, 8em, 8em, 4em);
-     width: 8em;
-     height: 8em;
+     clip: rect(0, 6.8em, 6.8em, 3.4em);
+     width: 6.8em;
+     height: 6.8em;
   }
 }
