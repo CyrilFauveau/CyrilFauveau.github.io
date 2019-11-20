@@ -446,6 +446,9 @@ body {
   }
 
   /* -------------------- CV -------------------- */
+  .block_cv .inner {
+    padding-bottom: 3rem; 
+  }
   .block_cv .subtitle {
     margin-top: 10rem;
   }
