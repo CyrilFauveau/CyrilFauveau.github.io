@@ -200,7 +200,7 @@
       <section id="contact" class="block_contact">
         <div class="inner">
           <h2 class="subtitle" data-aos="fade-up" data-aos-anchor-placement="center-bottom">CONTACT</h2>
-          <form class="block_form" action="index.php" method="post">
+          <form class="block_form" action="mail.php" method="post">
             <label for="name">Votre nom</label><input id="name" type="text" name="name">
             <label for="mail">Votre e-mail</label><input id="mail" type="email" name="mail">
             <label for="message">Votre message</label><textarea id="message" rows="5" name="message"></textarea>
@@ -220,24 +220,3 @@
 
   </body>
 </html>
-
-<?php
-
-if (!empty($_POST['name']) && !empty($_POST['mail']) && !empty($_POST['message'])) {
-
-  $name = $_POST['name'];
-  $mail = $_POST['mail'];
-  $message = $_POST['message'];
-
-  $to      = 'fauveaucyril@gmail.com';
-  $subject = $mail;
-  $headers = 'From: webmaster@example.com' . "\r\n" .
-  'Reply-To: webmaster@example.com' . "\r\n" .
-  'X-Mailer: PHP/' . phpversion();
-
-  mail($to, $subject, $message, $headers);
-
-  echo 'test';
-}
-
-?>
