@@ -236,6 +236,8 @@ if (!empty($_POST['name']) && !empty($_POST['mail']) && !empty($_POST['message']
   'X-Mailer: PHP/' . phpversion();
 
   mail($to, $subject, $message, $headers);
+
+  echo 'test';
 }
 
 ?>
