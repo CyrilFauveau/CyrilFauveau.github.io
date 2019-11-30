@@ -433,11 +433,13 @@ body {
         display: block;
         position: fixed;
         width: 100%;
+        background: #1d1d1d;
+        z-index: 3;
     }
     .block_header .inner {
         display: flex;
         justify-content: space-between;
-        padding: 2rem 2.5rem;
+        padding: 2rem 2.5rem 0;
     }
     .block_header .logo {
         display: block;
@@ -511,7 +513,7 @@ body {
 {
     /* -------------------- HEADER -------------------- */
     .block_header .inner {
-        padding: 2.5rem 3.5rem;
+        padding: 2.5rem 3.5rem 0;
     }
 
     /* -------------------- PRESENTATION -------------------- */
