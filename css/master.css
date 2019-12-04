@@ -5,20 +5,17 @@
 body {
     margin: 0;
 }
-
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 p {
     margin: 0;
 }
-
 ul, ol {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-
 figure {
     margin: 0;
 }
@@ -26,17 +23,12 @@ img {
     max-width: 100%;
     max-height: 100%;
 }
-
 a {
     color: white;
     text-decoration: none;
 }
-
 strong {
     font-weight: normal;
-}
-em {
-    font-style: normal;
 }
 
 /* -------------------- COMMONS -------------------- */
@@ -210,7 +202,7 @@ body {
     background-size: cover;
 }
 #slider .slide_3 {
-    background: url("../img/selecao.jpg");
+    background: url("../img/seven_keys.jpg");
     background-size: cover;
 }
 
