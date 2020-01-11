@@ -52,15 +52,20 @@ body {
     margin: 0 auto;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 .subtitle {
     text-align: center;
     font-family: 'Oswald', sans-serif;
     font-size: 2.3rem;
     margin-bottom: 2rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.contact_fixed {
+    display: none;
 }
 
 /* -------------------- HEADER -------------------- */
@@ -194,11 +199,11 @@ body {
      right: 0;
 }
 #slider .slide_1 {
-    background: url("../img/futuroid.jpg");
+    background: url("../img/perioseries.png");
     background-size: cover;
 }
 #slider .slide_2 {
-    background: url("../img/perioseries.png");
+    background: url("../img/futuroid.jpg");
     background-size: cover;
 }
 #slider .slide_3 {
@@ -423,12 +428,39 @@ body {
         margin-bottom: 5rem;
     }
 
+
+    .contact_fixed {
+        display: block;
+        position: fixed;
+        top: 30%;
+        right: 0;
+    }
+    .contact_fixed > .media {
+        margin: 10px;
+    }
+    .contact_fixed > .media a {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: rgba(255, 255, 255, .1);
+        width: 20px;
+        height: 20px;
+        display: block;
+        padding: 20px;
+    }
+    .contact_fixed > .media a:hover {
+        background: rgba(255, 255, 255, .2)
+    }
+    .contact_fixed > .media > img {
+        margin: auto;
+    }
+
     /* -------------------- HEADER -------------------- */
     .block_header {
         display: block;
         position: fixed;
         width: 100%;
-        background: #1d1d1d;
+        /* background: #1d1d1d; */
         z-index: 3;
     }
     .block_header .inner {
@@ -506,6 +538,13 @@ body {
 
 @media (min-width: 1536px)
 {
+    .contact_fixed {
+        top: 35%;
+    }
+    .contact_fixed > .media a {
+        width: 25px;
+        height: 25px;
+    }
     /* -------------------- HEADER -------------------- */
     .block_header .inner {
         padding: 2.5rem 3.5rem 0;
