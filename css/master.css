@@ -21,7 +21,6 @@ figure {
 }
 img {
     max-width: 100%;
-    max-height: 100%;
 }
 a {
     color: white;
@@ -145,7 +144,8 @@ body {
 .block_projects {
     padding: 3rem 1rem !important;
 }
-.block_projects .carousel_buttons {
+
+/* .block_projects .carousel_buttons {
     display: flex;
     justify-content: space-between;
     width: 180px;
@@ -160,30 +160,16 @@ body {
 .block_projects .carousel_buttons .button.active {
     width: 70px;
     background: white;
+} */
+
+.block_projects #slider {
+    position: relative;
 }
 
-#slider {
-    position: relative;
-    overflow: hidden;
-    margin: 0 auto;
-}
-#slider ul {
-    position: relative;
-    height: 200px;
-    list-style: none;
-}
-#slider ul li {
-    position: relative;
-    display: block;
-    float: left;
-    width: 300px;
-    height: 300px;
-    line-height: 300px;
-}
-.control_prev,
-.control_next {
+.block_projects .control_prev,
+.block_projects .control_next {
     position: absolute;
-    top: 40%;
+    top: 25%;
     z-index: 1;
     display: block;
     width: auto;
@@ -193,22 +179,29 @@ body {
     opacity: 0.8;
     cursor: pointer;
     border: 0;
-    padding: 4% 3%;
+    padding: 20px;
+    /* display: none; */
 }
-.control_next {
+.block_projects .control_next {
      right: 0;
 }
-#slider .slide_1 {
-    background: url("../img/perioseries.png");
+
+.block_projects {
+    display: block;
+}
+.block_projects .left {
+    height: 400px;
+    overflow: hidden;
+}
+.block_projects .left > img {
     background-size: cover;
 }
-#slider .slide_2 {
-    background: url("../img/futuroid.jpg");
-    background-size: cover;
-}
-#slider .slide_3 {
-    background: url("../img/seven_keys.jpg");
-    background-size: cover;
+.block_projects .right .title3 {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
 }
 
 /* -------------------- SKILLS -------------------- */
@@ -348,16 +341,6 @@ body {
 
 
 
-@media (min-width: 640px)
-{
-    /* -------------------- SLIDER -------------------- */
-    #slider ul li {
-        width: 500px;
-    }
-}
-
-
-
 
 
 @media (min-width: 768px)
@@ -389,9 +372,16 @@ body {
     }
 
     /* -------------------- PROJECTS -------------------- */
-    #slider ul li {
+    .block_projects #slider {
         width: 600px;
-        height: 400px;
+        margin: auto;
+    }
+    .block_projects #slider .control_next,
+    .block_projects #slider .control_prev {
+        top: 30%;
+    }
+    .block_projects #slider .title3 {
+        margin: 3rem 0 1.5rem;
     }
 
     /* -------------------- CV -------------------- */
@@ -411,7 +401,7 @@ body {
 
 
 
-@media (min-width: 1336px)
+@media (min-width: 1360px)
 {
     /* -------------------- COMMONS -------------------- */
     .block_main > section {
@@ -505,9 +495,38 @@ body {
         width: 40%;
     }
 
-    /* -------------------- POJECTS -------------------- */
+    /* -------------------- PROJECTS -------------------- */
+    .block_projects .inner {
+        padding: 5rem 0;
+    }
     .block_projects .subtitle {
         margin: 5rem 0 3rem;
+    }
+
+    .block_projects #slider .control_next,
+    .block_projects #slider .control_prev {
+        top: 40%;
+    }
+
+    .block_projects #slider {
+        width: 80%;
+    }
+    .block_projects #slider figure {
+        display: flex;
+        padding: 0 4rem;
+    }
+    .block_projects #slider .left,
+    .block_projects #slider .right {
+        width: 50%;
+    }
+    .block_projects #slider .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2rem;
+    }
+    .block_projects #slider .right .text {
+        margin-bottom: 5rem;
     }
 
     /* -------------------- SKILLS -------------------- */
@@ -566,11 +585,19 @@ body {
 
     /* -------------------- PROJECTS -------------------- */
     .block_projects .subtitle {
-        margin: 5rem 0 3rem;
+        margin: 4rem 0;
     }
-    #slider ul li {
-        width: 700px;
+    .block_projects #slider {
+        width: 100%;
+    }
+    .block_projects #slider .left {
         height: 500px;
+    }
+    .block_projects #slider .title3 {
+        font-size: 1.8rem;
+    }
+    .block_projects #slider .text {
+        font-size: 1.2rem;
     }
 
     /* -------------------- SKILLS -------------------- */

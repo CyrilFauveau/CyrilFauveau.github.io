@@ -89,49 +89,23 @@
     <div class="inner">
         <h2 class="subtitle">PROJETS</h2>
 
-        <!-- <div class="carousel">
-            <figure class="image">
-                <img src="img/futuroid.jpg" alt="futuroid">
-                <figcaption class="legend"><a href="https://futuroid.io/" target="_blank" rel="noopener noreferrer">Futuroid</a></figcaption>
-            </figure>
-        </div> -->
-
         <div id="slider">
-            <button class="control_next">
+            <button class="control_next" onclick="nextSlide()">
                 <i class="fa fa-chevron-right"></i>
             </button>
-            <button class="control_prev">
+            <button class="control_prev" onclick="previousSlide()">
                 <i class="fa fa-chevron-left"></i>
             </button>
-            <ul>
-                <li class="slide_1 slide_n">
-                    <!-- <div class="left">
 
-                    </div>
-                    <div class="right">
-                        <h3 class="title3">Futuroid</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div> -->
-                </li>
-                <li class="slide_2 slide_n">
-                    <!-- <div class="left">
-
-                    </div>
-                    <div class="right">
-                        <h3 class="title3">PerioSeries</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div> -->
-                </li>
-                <li class="slide_3 slide_n">
-                    <!-- <div class="left">
-
-                    </div>
-                    <div class="right">
-                        <h3 class="title3">Seven Keys</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div> -->
-                </li>
-            </ul>
+            <figure>
+                <div class="left">
+                    <img id="slideImage" src="" alt="">
+                </div>
+                <figcaption class="right">
+                    <h3 id="slideTitle" class="title3"></h3>
+                    <p id="slideText" class="text"></p>
+                </figcaption>
+            </figure>
         </div>
 
         <!-- <div class="carousel_buttons">
@@ -257,18 +231,18 @@
 </section>
 
 <!-- <section id="contact" class="block_contact">
-<div class="inner">
-<h2 class="subtitle">CONTACT</h2>
-<form class="block_form" action="mail.php" method="post">
-<label for="name">Votre nom</label><input id="name" type="text" name="name">
-<label for="mail">Votre e-mail</label><input id="mail" type="email" name="mail">
-<label for="message">Votre message</label><textarea id="message" rows="5" name="message"></textarea>
-<input class="send" type="submit" value="Envoyer">
-</form>
-<div class="informations">
+    <div class="inner">
+        <h2 class="subtitle">CONTACT</h2>
+        <form class="block_form" action="mail.php" method="post">
+            <label for="name">Votre nom</label><input id="name" type="text" name="name">
+            <label for="mail">Votre e-mail</label><input id="mail" type="email" name="mail">
+            <label for="message">Votre message</label><textarea id="message" rows="5" name="message"></textarea>
+            <input class="send" type="submit" value="Envoyer">
+        </form>
+        <div class="informations">
 
-</div>
-</div>
+        </div>
+    </div>
 </section> -->
 </main>
 
@@ -276,8 +250,6 @@
 <script>
 AOS.init();
 </script>
-
-<script src="js/jquery-3.4.1.min.js"></script>
 
 <script src="js/slider.js"></script>
 
