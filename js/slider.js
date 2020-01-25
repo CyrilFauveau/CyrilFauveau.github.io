@@ -1,7 +1,7 @@
 var futuroid = {
 	"title" : "Futuroid",
 	"image" : "img/futuroid.png",
-	"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	"text" : "Futuroid est une entreprise basée à Angers proposant des jeux en réalité virtuelle. Lors de ma deuxième année à My Digital School, nous travaillions tous les mercredis en autonomie sur différents projets concrets. Mon groupe et moi-même avons réalisé la refonte de l'ancien site. Je me suis occupé de la partie backend avec notamment la réservation en ligne de créneaux horaires.",
 	"alt" : "Futuroid",
 }
 
@@ -15,7 +15,7 @@ var perioseries = {
 var sevenkeys = {
 	"title" : "Seven Keys",
 	"image" : "img/seven_keys.jpg",
-	"text" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+	"text" : "Un jeu en 48 heures. C'est le but de la Game Jam à laquelle j'ai participer en nomvembre 2019 avec 5 autres personnes. Ce projet fut une découverte pour moi puisque je n'avais jamais réalisé de jeux auparavant. J'ai vraiment apprécié toute la partie de réflexion et de collaboration qui était nécessaire pour développer ce jeu.",
 	"alt" : "Seven Keys",
 }
 
